@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype);
+}
+
+body{
+    background-color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk";
+}
+
+#main{
+    margin: 20px 0;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    font-size: 15px;
+    justify-self: center;   
+    width: 38%;
+}
+
+.blue{
+    width: 36%;
+    margin: 0;
+    display: inline-block;
+    color: hsl(241, 100%, 89%);
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.blue span{
+    color: hsl(0, 0%, 100%);
+    display: block;
+}
+
+.summary{
+    width: 43%;
+    display: inline-block;
+    padding: 15px;
+}
+
+.yarn{
+    font-size: 12px;
+}
+
+.yarn span{
+    font-size: 23px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.score{
+    margin: 10px;
+    padding: 30px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 50%;
+    justify-self: center;
+    font-size: 12px;
+}
+
+.score span{
+    font-size: 40px;
+    font-weight: 800;
+    animation: glow 4s ease 1s infinite;
+}
+
+@keyframes glow {
+    0%{
+        color: hsl(0, 0%, 100%);
+    }
+    20%{
+        color: hsl(241, 100%, 89%);
+    }
+    40%{
+        color: hsl(252, 100%, 67%);
+    }
+    60%{
+        color: hsl(224, 30%, 27%);
+    }
+    80%{
+        color: hsl(252, 100%, 67%);
+    }
+    100%{
+        color: hsl(221, 100%, 96%);
+    }
+}
+
+.rates{
+    padding: 8px 10px;
+    width: 92%;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.rates img{
+    position: relative;
+    top: 5px;
+}
+
+.num{
+    position: relative;
+    top: 4px;
+    float: right;
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.num span{
+    color: hsl(224, 30%, 27%);
+}
+
+.rates p{
+    display: inline-block;
+}
+
+.one{
+    background-color: hsla(0, 100%, 67%, 0.05);
+    color: hsl(0, 100%, 67%);
+    animation-name: switch;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+.two{
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: hsl(39, 100%, 56%);
+    animation-name: switch;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+.three{
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
+    animation-name: switch;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+.four{
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
+    animation-name: switch;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes switch {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+        color: hsl(224, 30%, 27%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.button{
+    padding: 13px;
+    font-size: 15px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    animation: glow 4s ease 1s infinite;
+}
+
+.head{
+    display: block;
+    font-weight: 700;
+}
+
+.button:hover{
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
